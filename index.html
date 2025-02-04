@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>$MLK Motion Luther King coin on Solana 180headshot69cracksmoke</title>
+    <style>
+        body {
+            background: black url('https://web.archive.org/web/20091027130429/http://es.geocities.com/recursosanimados/estrellas.gif');
+            color: #00ff00;
+            font-family: "Comic Sans MS", cursive;
+            cursor: none;
+            margin: 0;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 5px solid #ff00ff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            color: #ff0000;
+            text-shadow: 2px 2px #00ff00, -2px -2px #0000ff;
+            animation: rainbow 3s infinite;
+        }
+
+        .mlg-logo {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            max-width: 90%;
+            filter: drop-shadow(0 0 10px #ff00ff);
+            animation: logoAnim 2s ease-in-out infinite;
+        }
+
+        @keyframes logoAnim {
+            0% { transform: scale(1) rotate(-2deg); }
+            50% { transform: scale(1.1) rotate(2deg); }
+            100% { transform: scale(1) rotate(-2deg); }
+        }
+
+        .marquee {
+            background: #ff0000;
+            padding: 10px;
+            color: yellow;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .marquee span {
+            display: inline-block;
+            animation: marquee 15s linear infinite;
+        }
+
+        .score {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #ff0000;
+            background: black;
+            padding: 10px;
+            border: 2px solid #00ff00;
+            z-index: 2;
+        }
+
+        .target {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://web.archive.org/web/20091027130429/http://es.geocities.com/recursosanimados/skull.gif');
+            background-size: contain;
+            cursor: pointer;
+        }
+
+        .crosshair {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            pointer-events: none;
+            z-index: 9999;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="lime" stroke-width="2" fill="none"/><line x1="16" y1="0" x2="16" y2="32" stroke="red" stroke-width="2"/><line x1="0" y1="16" x2="32" y2="16" stroke="red" stroke-width="2"/></svg>');
+        }
+
+        @keyframes rainbow {
+            0% { color: red; }
+            33% { color: yellow; }
+            66% { color: lime; }
+            100% { color: red; }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .bullet-hole {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="black"/><circle cx="10" cy="10" r="5" fill="darkgray"/></svg>');
+        }
+
+        img.blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .crazy-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        }
+
+        @keyframes backgroundAnim {
+            0% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.5) rotate(180deg); }
+            100% { transform: scale(1) rotate(360deg); }
+        }
+
+        @keyframes gradientPos {
+            0% { background-position: 0% 50%, 0 0; }
+            50% { background-position: 100% 50%, 0 0; }
+            100% { background-position: 0% 50%, 0 0; }
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 24px;
+            margin: 10px 0;
+            text-shadow: 2px 2px #000;
+        }
+
+        .subtitle-1 {
+            color: #ff0;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        .subtitle-2 {
+            color: #0ff;
+            animation: shake 0.5s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0; }
+            to { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0; }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .mlk-image {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 600px;
+            z-index: 1;
+            pointer-events: none;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        }
+
+        .falling-target {
+            position: absolute;
+            height: auto;
+            max-height: 150px;
+            width: auto;
+            max-width: 150px;
+            pointer-events: auto;
+            cursor: crosshair;
+            transition: transform 0.1s;
+            animation: fall linear;
+            object-fit: contain;
+        }
+
+        .explosion {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            pointer-events: none;
+            animation: explode 0.5s ease-out forwards;
+            background: radial-gradient(circle, rgba(255,255,0,0.8) 0%, rgba(255,165,0,0.8) 50%, rgba(255,0,0,0) 100%);
+        }
+
+        .bang-text {
+            position: absolute;
+            font-size: 48px;
+            pointer-events: none;
+            animation: bangAnim 0.5s ease-out forwards;
+            z-index: 9999;
+        }
+
+        .social-links {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px;
+            z-index: 2;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.2s, filter 0.2s;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 10px #ff00ff);
+        }
+
+        @keyframes fall {
+            from { transform: translateY(-100px); }
+            to { transform: translateY(calc(100vh + 100px)); }
+        }
+
+        @keyframes explode {
+            0% { transform: scale(0.5); opacity: 1; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+
+        @keyframes bangAnim {
+            0% { transform: scale(0.5); opacity: 1; }
+            50% { transform: scale(2); opacity: 1; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+
+        .contract-address {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            border: 2px solid #ff00ff;
+            border-radius: 10px;
+            color: #00ff00;
+            font-family: monospace;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s ease;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .contract-address:hover {
+            background: rgba(0, 0, 0, 0.9);
+            transform: translate(-50%, -50%) scale(1.05);
+            box-shadow: 0 0 20px #ff00ff;
+        }
+
+        .copied-tooltip {
+            position: fixed;
+            background: #00ff00;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            pointer-events: none;
+            animation: fadeOut 1s forwards;
+            z-index: 101;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            70% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <audio id="bgMusic" loop autoplay>
+        <source src="mlkanthem.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="crazy-background"></div>
+    <img src="martin.png" alt="Martin Luther King" class="mlk-image">
+    <div class="crosshair"></div>
+    <div class="score">Score: <span id="score">0</span></div>
+    
+    <div class="contract-address" onclick="copyAddress(this)">
+        CA: AFqye1jKPpPffHbphzmuVDYWfw7eKcqUc2gRLKTdpump
+    </div>
+
+    <div class="social-links">
+        <a href="https://x.com/mlksolana420" target="_blank">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTIzIDNhMTAuOSAxMC45IDAgMCAxLTMuMTQgMS41MyA0LjQ4IDQuNDggMCAwIDAtNy44NiAzdjFBMTAuNjYgMTAuNjYgMCAwIDEgMyA0cy00IDkgNSAxM2ExMS42NCAxMS42NCAwIDAgMS03IDJjOSA1IDIwIDAgMjAtMTEuNWE0LjUgNC41IDAgMCAwLS4wOC0uODNBNy43MiA3LjcyIDAgMCAwIDIzIDN6Ii8+PC9zdmc+" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://t.co/ttH78BJkNi" target="_blank">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yMy45MSAzLjc5TDIwLjMgMjAuODRjLS4yNSAxLjIxLS45OCAxLjUtMiAuOTRsLTUuNS00LjA3LTIuNjYgMi41N2MtLjMuMy0uNTUuNTUtMS4xLjU1LS43MiAwLS42LS4yNy0uODQtLjk1TDYuMyAxMy43bC01LjQ1LTEuN2MtMS4xOC0uMzUtMS4xOS0xLjE2LjI2LTEuNzVsMjEuMjYtOC4yYy45Ny0uNDMgMS45LjI0IDEuNTMgMS43M3oiLz48L3N2Zz4=" alt="Telegram" class="social-icon">
+        </a>
+        <a href="https://dexscreener.com/solana/9xfolwzdpcbwumnr8kjz1tykcaxnsx3xzy5fwgpu2anf" target="_blank">
+            <img src="dexlogo.png" alt="Dexscreener" class="social-icon">
+        </a>
+    </div>
+
+    <div class="marquee">
+        <span>🔥 $MLK Motion Luther King on Solana 180headshot69cracksmoke 🔥 🔥 $MLK Motion Luther King on Solana 180headshot69cracksmoke 🔥</span>
+    </div>
+
+    <div class="container">
+        <img src="mlg-logo.png" alt="$MLK" class="mlg-logo">
+        <div class="subtitle subtitle-1">180headshot69cracksmoke</div>
+        <div class="subtitle subtitle-2">MOTION LUTHER KING 💎🎯</div>
+    </div>
+
+    <script>
+        // Ensure music plays and handle autoplay restrictions
+        window.addEventListener('load', () => {
+            const bgMusic = document.getElementById('bgMusic');
+            bgMusic.volume = 0.3; // Set a reasonable volume
+            
+            // Try to play automatically
+            const playPromise = bgMusic.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    // Auto-play was prevented
+                    // Show a button to start playing
+                    const playButton = document.createElement('button');
+                    playButton.innerHTML = '🎵 PLAY ANTHEM';
+                    playButton.style.position = 'fixed';
+                    playButton.style.top = '20px';
+                    playButton.style.left = '50%';
+                    playButton.style.transform = 'translateX(-50%)';
+                    playButton.style.zIndex = '1000';
+                    playButton.style.padding = '10px 20px';
+                    playButton.style.background = '#ff00ff';
+                    playButton.style.border = 'none';
+                    playButton.style.borderRadius = '5px';
+                    playButton.style.color = 'white';
+                    playButton.style.cursor = 'pointer';
+                    playButton.style.fontFamily = '"Comic Sans MS", cursive';
+                    playButton.style.fontSize = '18px';
+                    
+                    playButton.onclick = () => {
+                        bgMusic.play();
+                        playButton.remove();
+                    };
+                    
+                    document.body.appendChild(playButton);
+                });
+            }
+        });
+
+        let score = 0;
+        const scoreElement = document.getElementById('score');
+        const crosshair = document.querySelector('.crosshair');
+        const gunshot = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodHQrGspK3C+8/CuTB0hebnu7Z9NFxNfqNnPmVMiGVqdzMOWXzE1bKvNwpRcNThqq8vAk1s0NmmqysCTWzQ2aKnJwJJaND' + 'A'.repeat(1000));
+        gunshot.volume = 0.2;
+
+        // Mouse movement for crosshair
+        document.addEventListener('mousemove', (e) => {
+            crosshair.style.left = e.clientX - 16 + 'px';
+            crosshair.style.top = e.clientY - 16 + 'px';
+        });
+
+        // Shooting mechanics
+        document.addEventListener('click', (e) => {
+            // Play gunshot sound
+            gunshot.currentTime = 0;
+            gunshot.play();
+
+            // Create bullet hole
+            const bulletHole = document.createElement('div');
+            bulletHole.className = 'bullet-hole';
+            bulletHole.style.left = (e.clientX - 10) + 'px';
+            bulletHole.style.top = (e.clientY - 10) + 'px';
+            document.body.appendChild(bulletHole);
+
+            // Remove bullet hole after 2 seconds
+            setTimeout(() => bulletHole.remove(), 2000);
+
+            // Screen shake effect
+            document.body.style.transform = 'translate(5px, 5px)';
+            setTimeout(() => {
+                document.body.style.transform = 'translate(-5px, -5px)';
+                setTimeout(() => {
+                    document.body.style.transform = 'none';
+                }, 50);
+            }, 50);
+        });
+
+        // Array of target images
+        const targetImages = ['1.png', '2.png', '3.png', '4.png', '5.webp', '6.webp'];
+        const pointValues = {
+            '1.png': 10,
+            '2.png': 50,
+            '3.png': 100,
+            '4.png': 250,
+            '5.webp': 500,
+            '6.webp': 1000
+        };
+
+        // Function to spawn falling targets
+        function spawnFallingTarget() {
+            const target = document.createElement('img');
+            target.className = 'falling-target';
+            target.src = targetImages[Math.floor(Math.random() * targetImages.length)];
+            
+            // Random starting position
+            const startX = Math.random() * (window.innerWidth - 100);
+            target.style.left = startX + 'px';
+            target.style.top = '-100px';
+            
+            // Random fall duration between 3 and 6 seconds
+            const fallDuration = 3000 + Math.random() * 3000;
+            target.style.animationDuration = fallDuration + 'ms';
+            
+            document.body.appendChild(target);
+
+            // Handle click on target
+            target.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent regular shooting score
+                
+                // Create explosion effect
+                const explosion = document.createElement('div');
+                explosion.className = 'explosion';
+                const targetRect = target.getBoundingClientRect();
+                explosion.style.left = (targetRect.left + (targetRect.width / 2) - 75) + 'px';
+                explosion.style.top = (targetRect.top + (targetRect.height / 2) - 75) + 'px';
+                document.body.appendChild(explosion);
+
+                // Create BANG text effect
+                const bang = document.createElement('div');
+                bang.className = 'bang-text';
+                bang.textContent = '💥';
+                bang.style.left = (targetRect.left + (targetRect.width / 2)) + 'px';
+                bang.style.top = (targetRect.top + (targetRect.height / 2)) + 'px';
+                document.body.appendChild(bang);
+                
+                // Remove explosion and bang after animation
+                setTimeout(() => {
+                    explosion.remove();
+                    bang.remove();
+                }, 500);
+                
+                // Remove target
+                target.remove();
+                
+                // Add score based on target type
+                const pointValue = pointValues[target.src.split('/').pop()];
+                score += pointValue;
+                scoreElement.textContent = score;
+                
+                // Create score popup
+                const scorePopup = document.createElement('div');
+                scorePopup.className = 'bang-text';
+                scorePopup.textContent = `+${pointValue}`;
+                scorePopup.style.left = (targetRect.left + (targetRect.width / 2)) + 'px';
+                scorePopup.style.top = (targetRect.top - 20) + 'px';
+                scorePopup.style.color = '#ffff00';
+                document.body.appendChild(scorePopup);
+                
+                // Remove score popup with other effects
+                setTimeout(() => {
+                    explosion.remove();
+                    bang.remove();
+                    scorePopup.remove();
+                }, 500);
+                
+                // Play special sound
+                const explosion_sound = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodHQrGspK3C+8/CuTB0hebnu7Z9NFxNfqNnPmVMiGVqdzMOWXzE1bKvNwpRcNThqq8vAk1s0NmmqysCTWzQ2aKnJwJJaND' + 'A'.repeat(1000));
+                explosion_sound.volume = 0.3;
+                explosion_sound.play();
+            });
+
+            // Remove target if it goes off screen
+            setTimeout(() => {
+                if (document.body.contains(target)) {
+                    target.remove();
+                }
+            }, fallDuration);
+        }
+
+        // Spawn targets periodically
+        setInterval(spawnFallingTarget, 1000);
+
+        // Copy address function
+        function copyAddress(element) {
+            const address = 'AFqye1jKPpPffHbphzmuVDYWfw7eKcqUc2gRLKTdpump';
+            navigator.clipboard.writeText(address);
+            
+            // Create tooltip
+            const tooltip = document.createElement('div');
+            tooltip.className = 'copied-tooltip';
+            tooltip.textContent = 'Copied!';
+            
+            // Position tooltip near the click
+            const rect = element.getBoundingClientRect();
+            tooltip.style.top = (rect.top - 30) + 'px';
+            tooltip.style.left = (rect.left + rect.width/2 - 30) + 'px';
+            
+            document.body.appendChild(tooltip);
+            
+            // Remove tooltip after animation
+            setTimeout(() => tooltip.remove(), 1000);
+        }
+    </script>
+</body>
+</html> 
