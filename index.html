@@ -333,43 +333,10 @@
     </div>
 
     <script>
-        // Ensure music plays and handle autoplay restrictions
-        window.addEventListener('load', () => {
-            const bgMusic = document.getElementById('bgMusic');
-            bgMusic.volume = 0.3; // Set a reasonable volume
-            
-            // Try to play automatically
-            const playPromise = bgMusic.play();
-            
-            if (playPromise !== undefined) {
-                playPromise.catch(error => {
-                    // Auto-play was prevented
-                    // Show a button to start playing
-                    const playButton = document.createElement('button');
-                    playButton.innerHTML = '🎵 PLAY ANTHEM';
-                    playButton.style.position = 'fixed';
-                    playButton.style.top = '20px';
-                    playButton.style.left = '50%';
-                    playButton.style.transform = 'translateX(-50%)';
-                    playButton.style.zIndex = '1000';
-                    playButton.style.padding = '10px 20px';
-                    playButton.style.background = '#ff00ff';
-                    playButton.style.border = 'none';
-                    playButton.style.borderRadius = '5px';
-                    playButton.style.color = 'white';
-                    playButton.style.cursor = 'pointer';
-                    playButton.style.fontFamily = '"Comic Sans MS", cursive';
-                    playButton.style.fontSize = '18px';
-                    
-                    playButton.onclick = () => {
-                        bgMusic.play();
-                        playButton.remove();
-                    };
-                    
-                    document.body.appendChild(playButton);
-                });
-            }
-        });
+        // Set up audio
+        const bgMusic = document.getElementById('bgMusic');
+        bgMusic.volume = 0.3;
+        let musicStarted = false;
 
         let score = 0;
         const scoreElement = document.getElementById('score');
@@ -385,6 +352,12 @@
 
         // Shooting mechanics
         document.addEventListener('click', (e) => {
+            // Start music on first click if not already started
+            if (!musicStarted) {
+                bgMusic.play();
+                musicStarted = true;
+            }
+
             // Play gunshot sound
             gunshot.currentTime = 0;
             gunshot.play();
